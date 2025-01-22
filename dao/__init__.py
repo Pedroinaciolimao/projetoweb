@@ -51,6 +51,7 @@ def inserir_user(login,senha,nome):
     conn.close()
     return exito
 
+
 def listausuarios():
     con = conectardb()
     cur = con.cursor()
