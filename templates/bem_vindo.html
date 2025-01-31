@@ -4,18 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bem-vindo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style3.css') }}">
 </head>
 <body>
     <h1>Bem-vindo ao sistema!</h1>
     <p><a href="{{ url_for('treino_peito') }}">Acesse a página de treino de peito</a></p>
+     <p><a href="{{ url_for('exercicio') }}">Ir para a pagina de Cadastrar exercicio</a></p>
   <div>
 
         <hr><br>
         <a href="{{ url_for('listausuarios') }}">Listar usuários</a>
-
-        <form action="/" method="post">
+        <form action="/logout" method="post">
             <button type="submit">Sair</button>
         </form>
 
 </body>
 </html>
+
