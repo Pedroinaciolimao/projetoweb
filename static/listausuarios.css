@@ -4,81 +4,93 @@
     box-sizing: border-box;
 }
 
+/* Corpo do site */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-    line-height: 1.6;
-    display: block;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    padding: 20px;
 }
 
-.container {
-    width: 90%;
-    max-width: 600px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-}
+/* Cabeçalho */
 header {
-    background: #007BFF;
-    color: #fff;
+    background-color: #2C3E50;
+    color: white;
     padding: 20px;
     text-align: center;
+    border-radius: 8px;
 }
 
-header h1 {
-    font-size: 1.8em;
-    text-transform: uppercase;
-    letter-spacing: 1px;
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
 }
 
+/* Título da página */
 .page-title {
-    font-size: 1.5em;
-    margin-bottom: 20px;
-    color: #007BFF;
-    text-align: center;
-    text-transform: capitalize;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 5px;
+    font-size: 2rem;
+    color: #2C3E50;
     margin-bottom: 20px;
 }
 
-main {
-    padding: 20px;
-}
-
+/* Lista de usuários */
 .user-list {
-    list-style: none;
+    list-style-type: none;
+    padding: 0;
 }
 
 .user-item {
+    background-color: white;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
-    padding: 10px 15px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    background: #f9f9f9;
-    transition: transform 0.2s, background 0.2s;
+    align-items: center;
 }
 
 .user-item:hover {
-    background: #eef6ff;
-    transform: scale(1.02);
+    background-color: #ECF0F1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 .user-name {
-    font-weight: bold;
-    font-size: 1.1em;
-
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .user-login {
-    margin-left: 30px;
-    color: #555;
-    font-style: italic;
+    font-size: 1rem;
+    color: #7F8C8D;
+}
+
+/* Botão de Logout */
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #C0392B;
+}
+
+/* Adicionando um pouco de espaçamento e centralização no layout */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+ul {
+    padding-left: 0;
 }

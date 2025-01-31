@@ -1,60 +1,69 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    max-width: 400px;
-    background: white;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1d1f20;
+    color: #fff;
     padding: 20px;
-    margin: 50px auto;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Header */
 h1 {
-    color: #333;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: #f39c12;
+    margin-bottom: 30px;
 }
 
+/* Links */
 a {
     display: inline-block;
+    text-align: center;
+    padding: 12px 20px;
+    background-color: #f39c12;
+    color: #fff;
     text-decoration: none;
-    background: #007bff;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px 0;
     border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
+    font-size: 1.2em;
+    margin: 15px;
+    transition: background-color 0.3s;
 }
 
 a:hover {
-    background: #0056b3;
+    background-color: #e67e22;
 }
 
-.logout-form {
-    margin-top: 20px;
+/* Div e formatação de separação */
+hr {
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 20px 0;
 }
 
-button {
-    background: #dc3545;
+/* Botões de Sair */
+form button {
+    background-color: #e74c3c;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 25px;
     border-radius: 5px;
+    font-size: 1.2em;
     cursor: pointer;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
-button:hover {
-    background: #c82333;
+form button:hover {
+    background-color: #c0392b;
 }
 
-hr {
-    border: 1px solid #ddd;
-    margin: 20px 0;
+/* Texto explicativo */
+p {
+    font-size: 1.2em;
+    text-align: center;
+    color: #ecf0f1;
 }

@@ -3,231 +3,82 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Corpo */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #0d47a1, #1976d2); /* Gradiente de azul escuro para azul claro */
-    color: white;
-    overflow-x: hidden; /* Impede o scroll horizontal */
-}
-}
-
-/* Estilos do container principal */
-.container {
-    max-width: 1200px;
-    margin: 50px auto;
-    padding: 40px;
-    background: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
-    border-radius: 15px;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.6);
-    animation: containerAnimation 2s ease-in-out;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
 }
 
-/* Título principal */
-h1 {
-    font-size: 60px;
-    color: #ffeb3b; /* Amarelo vibrante */
-    text-transform: uppercase;
-    letter-spacing: 3px;
+/* Cabeçalho */
+header {
+    text-align: center;
     margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
 }
 
-/* Efeito de fade-in para o título */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+/* Títulos */
+h1 {
+    font-size: 36px;
+    color: #ff6347; /* Cor laranja/vermelho para destaque */
 }
 
-/* Subtítulo com impacto */
 h2 {
-    font-size: 30px;
-    color: #ff6347; /* Vermelho quente */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-top: 20px;
-    animation: slideIn 1.5s ease-out;
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #2e8b57; /* Cor verde para títulos principais */
 }
 
-/* Efeito de slide-in para o subtítulo */
-@keyframes slideIn {
-    from {
-        opacity: 0;
-        transform: translateX(-50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-/* Efeito de destaque nos links */
 a {
-    color: #ffeb3b; /* Amarelo vibrante */
-    font-size: 20px;
     text-decoration: none;
+    color: #2e8b57;
     font-weight: bold;
-    margin-top: 15px;
-    display: inline-block;
-    padding: 12px 30px;
-    border-radius: 30px;
-    background: #222;
-    transition: all 0.3s ease;
 }
 
 a:hover {
-    background: #ff6347;
-    color: #fff;
-    transform: scale(1.1);
+    color: #ff6347;
 }
 
-/* Links de vídeo com efeitos */
-.video-link {
+/* Estilização dos Exercícios */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    font-size: 20px;
+    margin: 10px 0;
+    background-color: #f0f8ff; /* Azul claro */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul li:hover {
+    background-color: #ff6347; /* Cor laranja/vermelho para efeito hover */
+    color: white;
+}
+
+/* Seção de vídeo */
+section a {
     display: inline-block;
-    background: #32cd32; /* Verde limão */
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #2e8b57;
     color: white;
-    padding: 16px 32px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-size: 22px;
-    margin-top: 20px;
-    transition: all 0.4s ease-in-out;
-    box-shadow: 0 5px 15px rgba(50, 205, 50, 0.5);
-}
-
-.video-link:hover {
-    background: #228b22;
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(50, 205, 50, 0.7);
-}
-
-/* Parágrafos explicativos */
-p {
-    font-size: 18px;
-    margin-top: 20px;
-    color: #ccc;
-    line-height: 1.8;
-}
-
-/* Efeitos de hover em tabelas */
-table {
-    width: 100%;
-    margin: 30px 0;
-    border-collapse: collapse;
-    background: linear-gradient(135deg, #ff6347, #ff4500);
-    border-radius: 12px;
-    animation: tableAnimation 2s ease-in-out;
-}
-
-th, td {
-    padding: 18px;
     text-align: center;
-    font-size: 20px;
-}
-
-th {
-    background: #fff;
-    color: #222;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-td {
-    background: #2e2e2e;
-    color: #fff;
-    border-bottom: 2px solid #444;
-}
-
-/* Efeitos de Hover */
-td:hover {
-    background: #ff4500;
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-
-/* Animação de tabela */
-@keyframes tableAnimation {
-    from {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-/* Estilo para o formulário de cadastro */
-form {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-}
-
-input[type="text"], input[type="password"], input[type="email"] {
-    padding: 15px;
-    width: 300px;
-    border-radius: 10px;
-    border: none;
-    outline: none;
+    border-radius: 5px;
     font-size: 18px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus {
-    border: 2px solid #ff6347;
-    box-shadow: 0 0 10px rgba(255, 99, 71, 0.5);
-}
-
-button[type="submit"] {
+section a:hover {
     background-color: #ff6347;
-    color: white;
-    padding: 15px 25px;
-    border-radius: 30px;
-    font-size: 20px;
-    border: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
 }
 
-button[type="submit"]:hover {
-    background-color: #ff4500;
-    transform: scale(1.05);
-}
-
-/* Efeito de animação para o conteúdo */
-@keyframes containerAnimation {
-    from {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Texto dinâmico no título */
-h1 {
-    font-family: 'Impact', sans-serif;
-    color: #ffeb3b;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    animation: colorChange 4s infinite;
-}
-
-@keyframes colorChange {
-    0% { color: #ffeb3b; }
-    25% { color: #ff6347; }
-    50% { color: #32cd32; }
-    75% { color: #00bcd4; }
-    100% { color: #ffeb3b; }
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
 }

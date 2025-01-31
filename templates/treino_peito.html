@@ -7,17 +7,25 @@
      <link rel="stylesheet" href="{{ url_for('static', filename='stylepeito.css') }}">
 </head>
 <body>
-    <h1>Dia de Peito</h1>
-        <tr>
-            <th>Supino com Halteres</th>
-            <br>
-            <th>Crossover</th>
-            <br>
-            <th>Supino Inclinado com Halteres</th>
-        </tr>
-    </table>
-    <p>DEMONSTRAÇÃO DO EXERCÍCIO "SUPINO INCLINADO COM HALTERES"</p>
-    <a href="https://www.youtube.com/watch?v=F4Q1g2z8MWM">ACESSE O VÍDEO</a>
-    <p><a href="{{ url_for('index') }}">Voltar para o início</a></p>
+    <header>
+        <h1>Treino de Peito</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Exercícios do Dia</h2>
+            <ul>
+                <li>Supino com Halteres</li>
+                <li>Crossover</li>
+                <li>Supino Inclinado com Halteres</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>DEMONSTRAÇÃO DO EXERCÍCIO "SUPINO INCLINADO COM HALTERES"</h2>
+            <a href="https://www.youtube.com/watch?v=F4Q1g2z8MWM" target="_blank">ACESSE O VÍDEO</a>
+        </section>
+
+        <p><a href="{{ url_for('index') }}">Voltar para o início</a></p>
+    </main>
 </body>
 </html>
